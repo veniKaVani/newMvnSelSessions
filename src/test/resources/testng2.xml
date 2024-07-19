@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3"
+	thread-count="10" parallel="tests">
+
+
+ 	<test name="CostcoTest">
+		<parameter name="url" value="https://www.costco.com/"/>
+		<parameter name="browser" value="chrome" />
+		 <!--<parameter name="headless" value="false" />-->
+
+
+		<classes>
+			<class name="testnghw2.CostcoTest" />				
+		</classes>
+	</test>
+
+
+	<test name="IndeedTest">
+		<parameter name="url"
+			value="https://www.indeed.com/" />
+		<parameter name="browser" value="edge" />
+		<!-- <parameter name="headless" value="false" />-->
+
+
+		<classes>
+			<class name="testnghw2.IndeedTest" />
+		</classes>
+	</test>
+
+
+	<test name="JCpennyTest">
+		<parameter name="url"
+			value="https://www.jcpenney.com/" />
+		<parameter name="browser" value="edge" />
+		<!-- <parameter name="headless" value="false" />-->
+
+
+		<classes>
+			<class name="testnghw2.JCpennyTest" />
+		</classes>
+	</test>
+
+
+</suite>

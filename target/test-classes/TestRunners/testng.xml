@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Regression Suite" verbose="3"
+	thread-count="10" parallel="tests">
+
+
+<!-- 	<test name="EtsyTest">
+		<parameter name="url" value="https://www.etsy.com/?source=aw;utm_source=affiliate_window;utm_medium=affiliate;utm_campaign=us_location_buyer;utm_content=1097883;utm_term=0;sv1=affiliate;sv_campaign_id=1097883;awc=6220_1711584709_bce1ea6daad08a67ed681145ea452cc8"/>
+		<parameter name="browser" value="chrome" />
+		 <parameter name="headless" value="false" />
+
+
+		<classes>
+			<class name="testnghw.EtsyTest" />				
+		</classes>
+	</test>-->
+
+
+	<test name="IndeedTest">
+		<parameter name="url"
+			value="https://www.indeed.com/" />
+		<parameter name="browser" value="edge" />
+		<!-- <parameter name="headless" value="false" />-->
+
+
+		<classes>
+			<class name="testnghw.IndeedTest" />
+		</classes>
+	</test>
+
+
+	<test name="StaplesTest">
+		<parameter name="url"
+			value="https://www.staples.com/" />
+		<parameter name="browser" value="edge" />
+		<!-- <parameter name="headless" value="false" />-->
+
+
+		<classes>
+			<class name="testnghw.StaplesTest" />
+		</classes>
+	</test>
+
+
+</suite>
